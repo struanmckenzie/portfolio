@@ -1,11 +1,16 @@
+/* this is to override bootstrap and configure text */
+
+* {
+    color: #CBD2D0; !important;
+}
+
 body {
     font-family: "SN Pro", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: darkslategrey;
+    background-color: #1B2021;
 }
-
 
 .barlow-black-italic-big {
     font-family: "Barlow", sans-serif;
@@ -22,20 +27,19 @@ body {
 
 .sansation-regular {
     font-family: "Sansation", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
+    color: #00171F;
 }
 
 .sansation-regular-italic {
     font-family: "Sansation", sans-serif;
-    font-weight: 400;
+    font-weight: 1000;
     font-style: italic;
+    color: #00171F;
 }
 
-nav {
-    background-color: black;
-}
-
-* {
-    color: white;
+/* override bootstrap */
+.navbar {
+    background-color: #FCAB10;
 }
