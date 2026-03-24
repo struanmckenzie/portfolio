@@ -1,7 +1,27 @@
 /* this is to override bootstrap and configure text */
 
 * {
-    color: #d8d8d8; !important;
+    color: #d8d8d8;
+}
+/* neon */
+.bg-neon-purple {
+    background: linear-gradient(135deg, #b026ff, #2b0033, #000000);
+    min-height: 100vh;
+}
+
+.neon-text {
+    color: #c77dff;
+    text-shadow: 0 0 8px #b026ff, 0 0 16px #b026ff;
+}
+
+/* formal */
+.bg-formal-purple {
+    background: linear-gradient(135deg, #2b0a3d, #14051f, #000000);
+    min-height: 100vh;
+}
+
+.text-accent {
+    color: #9f7aea;
 }
 
 body {
@@ -9,7 +29,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
-    background-color: #f4e6c7;
 }
 
 .barlow-black-italic-big {
