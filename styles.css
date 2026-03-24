@@ -1,32 +1,121 @@
+/* this is to override bootstrap and configure text */
+
+* {
+    color: #d8d8d8;
+}
+
 body {
-    font-family: "SN Pro", sans-serif;
+    font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #052e2b, #021f3f);
+}
+
+.centered-container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+/* =========================
+   TEXT LINKS
+========================= */
+a {
+    color: #4ade80;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline double;
+}
+
+/* nav style */
+.nav-link {
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #9fbec3;
+    text-decoration: none;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.12);
+    color: #e6f1f2;
+    text-decoration: none;
+}
+
+.active {
+    background: linear-gradient(135deg, #16a34a, #2563eb);
+    color: white;
+    border-color: transparent;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+/* Box style */
+.box {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: 0.25s;
+    font-size: 1rem;
+    padding: 20px 24px;
+    overflow: visible;
+}
+
+.box:hover {
+    transform: scale3d(1.01, 1.01, 1);
+}
+
+/* separate elements horizontally */
+.pack {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    flex: 0 0 auto;    /* let content decide height */
+    min-height: 220px;
 }
 
 
+
+/* font stuff */
 .barlow-black-italic-big {
     font-family: "Barlow", sans-serif;
     font-weight: 900;
-    font-style: italic;
+    font-style: normal;
     font-size: 5rem;
 }
 .barlow-black-italic-small {
     font-family: "Barlow", sans-serif;
     font-weight: 900;
-    font-style: italic;
+    font-style: normal;
     font-size: 3rem;
 }
 
-.sansation-regular {
-    font-family: "Sansation", sans-serif;
-    font-weight: 400;
+.lexend-regular {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
 }
 
-.sansation-regular-italic {
-    font-family: "Sansation", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+.lexend-regular-black {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
