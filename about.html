@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap stuff -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!-- google font stuff -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,48 +16,85 @@
     <title>About</title>
 </head>
 <body>
-<div class="container">
+<header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand">
         <div class="container-fluid">
             <div class="navbar-nav">
-                <a class="nav-link lexend-regular" aria-current="page" href="index.html">Home</a>
-                <a class="nav-link lexend-regular-black" href="about.html">About</a>
-                <a class="nav-link lexend-regular" href="folio.html">Portfolio</a>
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link current" href="about.html">About</a>
+                <a class="nav-link" href="folio.html">Portfolio</a>
             </div>
         </div>
     </nav>
-    <div class="row">
-        <div class="col-12 col-md-4 p-2">
-            <div>
-                <img src="https://picsum.photos/400" class="rounded-3 img-fluid" alt="image of me">
-            </div>
+</header>
+<main>
+    <div class="container thin">
+        <h2 class="pt-3">Education</h2>
+        <div class="box">
+            <h4>University of Dundee</h4>
+            <p class="italic">BSc Computer Science | September 2025 - Present</p>
+            <ul> Notable Modules
+                <li>Introduction to Software Development</li>
+                <li>Embedded Systems and Networking</li>
+                <li>Front End Website Development</li>
+                <li>Introduction to Data Structures and Algorithms</li>
+                <li>Unix Systems</li>
+                <li>Mathematics for Computer Science</li>
+            </ul>
         </div>
-        <div class="col-12 col-md-8 p-3">
-            <div class="col-12 box">
-                <h4>Who am I?</h4>
-                <p>I am a first year computer science student at the University of Dundee. I have a strong interest in
-                    software development - I love developing programs both in an out of university using Java and Python
-                    (more info on some of these on the portfolio page). I have a hunger for learning more to improve my
-                    skills and make better programs in the future.</p>
-            </div>
-            <br>
-            <div class="col-12 p-3 box">
-                <h4>Links:</h4>
-                <p>Email: struanjmckenzie@proton.me<br>
-                    LinkedIn: <a href="https://www.linkedin.com/in/struan-mckenzie">www.linkedin.com/in/struan-mckenzie</a>
-                </p>
-            </div>
+        <br>
+        <div class="box">
+            <h4>Peebles High School</h4>
+            <p class="italic">August 2019 - April 2025</p>
+            <ul> Notable Qualifications
+                <li>Advanced Higher Music - A</li>
+                <li>Higher Computing Science - A</li>
+                <li>Higher Mathematics - A</li>
+                <li>Higher Physics - B</li>
+                <li>Higher English - B</li>
+                <li>National 5 Practical Electronics - A</li>
+            </ul>
+        </div>
+        <br>
+        <h2>Work Experience</h2>
+        <div class="box">
+            <h4>Stobo Castle Health Spa</h4>
+            <p class="italic">Part-time | Room Assistant | December 2024 - September 2025</p>
+            <ul>
+                <li>Maintain a high standard of cleanliness in rooms, corridors, toilets, etc.</li>
+                <li>Restock supplies from storage to cleaning closets</li>
+                <li>Communicate effectively with other staff and guests when required</li>
+                <li>Pick up extra shifts when needed</li>
+            </ul>
+        </div>
+        <br>
+        <div class="box">
+            <h4>School's Out Peebles</h4>
+            <p class="italic">Part-time | Play Assistant | Summer 2024</p>
+            <ul>
+                <li>Supervise children</li>
+                <li>Ensure the kids have fun</li>
+                <li>Assist in games/activities</li>
+                <li>Report any misconduct</li>
+            </ul>
+        </div>
+        <br>
+        <div class="box">
+            <h4>MJ Catering/The Dawyck Cafe</h4>
+            <p class="italic">Part-time | Kitchen Porter | August 2022 - December 2024</p>
+            <ul>
+                <li>Collect, wash, and put away dishes</li>
+                <li>Prepare food</li>
+                <li>Serve customers</li>
+                <li>Clean up ready for next morning</li>
+            </ul>
         </div>
     </div>
-<!-- comment out the rest of this section for now, will add more later. -->
-<!--    <div class="row">
-        <div class="col-12 col-sm-6 col-md-3 p-2">
-            ADD STUFF ABOUT MY FAVOURITE/KEY MODULES, SKILLS, QUALIFICATIONS, AND THAT SORT OF THING. TALK ABOUT SKILLS
-            I HAVE FROM BEING IN A BAND AND COMMITMENT TO THE GYM. ALSO TALK ABOUT INTEREST IN MUSIC
-        </div>
-    </div>
-    -->
-</div>
+</main>
+<br>
+<footer>
+    <p class="text-center p-4">Struan McKenzie - No Copyright 2026</p>
+</footer>
 </body>
 </html>

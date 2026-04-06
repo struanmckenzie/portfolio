@@ -1,27 +1,29 @@
-/* this is to override bootstrap and configure text */
+/* ============================
+   Styles for the whole website
+   ============================ */
 
-* {
-    color: #d8d8d8;
-}
-
+/* ===========================
+   Override default HTML style
+   =========================== */
 body {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
     min-height: 100vh;
-    background: linear-gradient(135deg, #052e2b, #021f3f);
+    background: linear-gradient(135deg, #18093f, #33093f);
+    color: #d8d8d8;
 }
 
-.centered-container {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
+header {
+    padding-inline: 2rem;
 }
 
-/* =========================
-   TEXT LINKS
-========================= */
+main {
+    padding-inline: 2rem;
+}
+
+/* link style */
 a {
     color: #4ade80;
     text-decoration: underline;
@@ -31,14 +33,19 @@ a:hover {
     text-decoration: underline double;
 }
 
-/* nav style */
+footer {
+    padding-block: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.06);
+}
+
+/* =================
+    Nav style
+   ================= */
 .nav-link {
-    padding: 7px 14px;
     border-radius: 8px;
     font-size: 1rem;
-    font-weight: 600;
-    color: #9fbec3;
-    text-decoration: none;
+    color: #d8d8d8;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.1);
     transition: 0.2s;
@@ -51,13 +58,12 @@ a:hover {
     text-decoration: none;
 }
 
-.active {
-    background: linear-gradient(135deg, #16a34a, #2563eb);
-    color: white;
-    border-color: transparent;
+.current {
+    font-weight: 700;
 }
 
 .navbar {
+    padding-top: 0.5rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -65,12 +71,22 @@ a:hover {
     gap: 10px;
 }
 
+/* =================
+   Content styling
+   ================= */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
 /* Box style */
 .box {
     background: rgba(255,255,255,0.05);
     border-radius: 16px;
     backdrop-filter: blur(14px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 10px rgba(0,0,0,0.3);
     transition: 0.25s;
     font-size: 1rem;
     padding: 20px 24px;
@@ -81,24 +97,29 @@ a:hover {
     transform: scale3d(1.01, 1.01, 1);
 }
 
-/* separate elements horizontally */
-.pack {
-    display: flex;
-    gap: 20px;
-    padding-top: 20px;
-    flex: 0 0 auto;    /* let content decide height */
-    min-height: 220px;
+/* for centering images */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
+/* restrict width of about page */
+.thin {
+    max-width: 60rem;
+}
 
-
-/* font stuff */
+/* ==============
+   Font styles
+   ============== */
 .barlow-black-italic-big {
     font-family: "Barlow", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 5rem;
 }
+
 .barlow-black-italic-small {
     font-family: "Barlow", sans-serif;
     font-weight: 900;
@@ -106,16 +127,6 @@ a:hover {
     font-size: 3rem;
 }
 
-.lexend-regular {
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.lexend-regular-black {
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+.italic {
+    font-style: italic;
 }
