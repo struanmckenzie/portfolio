@@ -63,6 +63,13 @@ a:hover {
     gap: 10px;
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+
 /* Box style */
 .box {
     background: rgba(255,255,255,0.05);
