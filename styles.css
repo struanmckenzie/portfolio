@@ -102,11 +102,16 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
+}
+
+/* restrict width of about page */
+.thin {
+    max-width: 60rem;
 }
 
 /* ==============
-   Font packs
+   Font styles
    ============== */
 .barlow-black-italic-big {
     font-family: "Barlow", sans-serif;
@@ -114,9 +119,14 @@ footer {
     font-style: normal;
     font-size: 5rem;
 }
+
 .barlow-black-italic-small {
     font-family: "Barlow", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 3rem;
+}
+
+.italic {
+    font-style: italic;
 }
