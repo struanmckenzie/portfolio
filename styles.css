@@ -11,8 +11,8 @@ body {
     font-weight: 350;
     font-style: normal;
     min-height: 100vh;
-    background: linear-gradient(135deg, #18093f, #33093f);
-    color: #d8d8d8;
+    background: linear-gradient(135deg, #f4f9ff, #fgfgfg);
+    color: #000000;
 }
 
 header {
@@ -45,7 +45,6 @@ footer {
 .nav-link {
     border-radius: 8px;
     font-size: 1rem;
-    color: #d8d8d8;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.1);
     transition: 0.2s;
@@ -54,7 +53,7 @@ footer {
 
 .nav-link:hover {
     background: rgba(255,255,255,0.12);
-    color: #e6f1f2;
+    color: #a8a8a8;
     text-decoration: none;
 }
 
