@@ -11,7 +11,7 @@ body {
     font-weight: 350;
     font-style: normal;
     min-height: 100vh;
-    background: linear-gradient(135deg, #ffffff, #e7e3ed);
+    background: #eaeaea;
     color: #000000;
 }
 
@@ -45,20 +45,27 @@ footer {
 .nav-link {
     border-radius: 8px;
     font-size: 1rem;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0, 0.05);
+    border: 1px solid rgba(255,255,255, 0.7);
+
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7),
+      inset 4px 4px 4px rgba(255, 255, 255, 0.7);
+
     transition: 0.2s;
     cursor: pointer;
 }
 
+.nav-link.selected {
+    shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.7);
+}
+
 .nav-link:hover {
-    background: rgba(255,255,255,0.12);
-    color: #a8a8a8;
+    background: rgba(0,0,0, 0.2);
     text-decoration: none;
 }
 
-.current {
-    font-weight: 700;
+.current { 
+    box-shadow: inset 2px 2px 1px rgba(0,0,0, 0.7);
 }
 
 .navbar {
@@ -82,10 +89,12 @@ footer {
 
 /* Box style */
 .box {
-    background: rgba(255,255,255,0.05);
+    background: rgba(230,230,230,0.4);
+    border: 2px solid rgba(255,255,255,0.4);
     border-radius: 16px;
     backdrop-filter: blur(14px);
-    box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+    box-shadow: 6px 8px 5px rgba(0,0,0,0.3),
+      inset 6px 8px 5px rgba(255,255,255,0.7);
     transition: 0.25s;
     font-size: 1rem;
     padding: 20px 24px;
