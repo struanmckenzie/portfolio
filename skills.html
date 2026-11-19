@@ -33,18 +33,134 @@
   <div class="container">
     <h2>Technical Skills</h2>
     <div class="row">
+      <p>I have experience using several languages; Java, C, C++, Python, HTML, CSS. Here are some snippets to demonstrate:</p>
       <div class="col-12 col-md-6 col-lg-4">
         <div class="box">
-          <h3>Programming Languages</h3>
-          <p>
-            I have experience using several languages; Java, C, C++, Python, HTML, CSS. Here are some snippets to demonstrate:
-          </p>
-          <p>
+          Java:
+          <pre>
+            <code>
+public void saveQ() {
+    FileOutputStream fos;
+    PrintWriter pw;
+    Iterator&ltIncident&gt qIt;
+    Incident nextIncident;
+    qIt = incidents.iterator();
 
-          </p>
+    System.out.println("Enter a name for the file: ");
+    String name = CallHandler.scn.nextLine();
+
+    // make sure name isn't empty
+    while (name.isEmpty()) {
+        System.out.println("Can't be named nothing\nEnter a string: ");
+        name = CallHandler.scn.nextLine();
+    }
+    String filename = ("./EmergencyDispatchSystem/" + name + ".csv");
+    // see if save folder exists, creates one if not
+    File theDir = new File("./EmergencyDispatchSystem/");
+    if (!theDir.exists()){
+        theDir.mkdirs();
+    }
+
+    try {
+        fos = new FileOutputStream(filename);
+        pw = new PrintWriter(fos);
+
+        while (qIt.hasNext()) {
+            nextIncident = qIt.next();
+            pw.println(nextIncident.getTime() +","+ nextIncident.getType() +","+ nextIncident.getDistrict() +","+ nextIncident.getUuid());
+        }
+        pw.close();
+
+    } catch (FileNotFoundException e) {
+        throw new RuntimeException(e);
+    }
+
+    System.out.println("Saved " + filename);
+}
+          </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box">
+          C:
+          <pre><code>
+// Return pointer to user in a hash table or NULL
+User *find_user(const HashTable *ht, int user_id)
+{
+    // validate hash table pointer
+    if (ht != NULL)
+    {
+        // get user's bucket and validate user_id
+        int uBucket = get_bucket_for_user(user_id);
+
+        // find user in bucket
+        if (uBucket != -1 && ht->buckets[uBucket] != NULL)
+        {
+            // set current user pointer
+            User *current = ht->buckets[uBucket];
+
+            while (current != NULL)
+            {
+                // if user exists return pointer
+                if (current->user_id == user_id)
+                    return current;
+
+                // increment current user
+                current = current->next;
+            }
+        }
+    }
+    // if there are any invalid inputs
+    return NULL;
+}
+          </code></pre>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box">
+          C++:
+          <pre><code>
+std::vector&ltEdge&gt AdjacencyMatrix::getNeighbouringEdges(int node) const
+{
+    // input validation
+    if (node > -1 && node < NUMBER_OF_VERTICES) {
+        std::vector&ltEdge&gt ne;   // store neighbouring edges
+
+        // add neighbouring edges in a loop
+        int destNode = 0;
+        for (int weight : adjMatrix[node]) {
+            // if an edge exists between source and current node
+            // add it to neighbouring edges vector
+            if (weight > 0) ne.push_back(Edge {node, destNode, weight});
+            destNode++;
+        }
+
+        // return vector of neighbouring edges
+        return ne;
+    }
+
+    // if an error occurs
+    return {}; // <-- an empty vector
+}
+          </code></pre>
         </div>
       </div>
     </div>
+
+    <h2>Soft Skills</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box">
+          <h3>Teamworking</h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 </main>
 <br>

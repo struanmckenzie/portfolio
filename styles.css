@@ -39,6 +39,10 @@ footer {
     background: rgba(0,0,0,0.06);
 }
 
+pre {
+    font-size: 11px;
+}
+
 /* =================
     Nav style
    ================= */
@@ -80,13 +84,6 @@ footer {
 /* =================
    Content styling
    ================= */
-.grid-format {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    gap: 2rem;
-    padding-bottom: 2rem;
-}
-
 /* Box style */
 .box {
     background: rgba(230,230,230,0.4);
