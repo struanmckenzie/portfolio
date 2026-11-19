@@ -93,8 +93,8 @@ footer {
     border: 2px solid rgba(255,255,255,0.4);
     border-radius: 16px;
     backdrop-filter: blur(14px);
-    box-shadow: 6px 8px 5px rgba(0,0,0,0.3),
-      inset 6px 8px 5px rgba(255,255,255,0.7);
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3),
+      inset 6px 6px 6px rgba(255,255,255,0.7);
     transition: 0.25s;
     font-size: 1rem;
     padding: 20px 24px;
